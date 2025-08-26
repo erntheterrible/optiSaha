@@ -1,0 +1,878 @@
+{
+  "app": {
+    "name": "OptiSaha"
+  },
+  "dashboard": {
+    "stats": {
+      "totalSales": "Total Sales",
+      "totalVisits": "Total Visits",
+      "avgProjectCost": "Avg. Project Cost",
+      "targetSuccessRate": "Target Success Rate",
+      "totalProjects": "Total Projects",
+      "completedProjects": "Completed Projects",
+      "activeVisits": "Active Visits",
+      "totalRevenue": "Total Revenue",
+      "avgVisitDuration": "Avg. Visit Duration",
+      "totalUsers": "Total Users",
+      "newUsers": "New Users",
+      "totalLeads": "Total Leads",
+      "convertedLeads": "Converted Leads"
+    },
+    "comparison": {
+      "title": "Comparison"
+    },
+    "kpi": {
+      "annualProfits": "Annual Profits"
+    },
+    "charts": {
+      "activityManager": "Activity Manager",
+      "teamPerformance": "Team Performance",
+      "revenueOverview": "Revenue Overview",
+      "userActivity": "User Activity",
+      "deviceDistribution": "Device Distribution",
+      "trafficSources": "Traffic Sources"
+    },
+    "activity": {
+      "search": "Search Activity",
+      "team": "Team",
+      "insights": "Insights",
+      "today": "Today"
+    },
+    "title": "Dashboard",
+    "welcome": "Welcome back, {{name}}!",
+    "time": {
+      "today": "Today",
+      "thisWeek": "This Week",
+      "thisMonth": "This Month",
+      "thisYear": "This Year",
+      "last7Days": "Last 7 Days",
+      "last30Days": "Last 30 Days",
+      "day": "Day",
+      "week": "Week",
+      "month": "Month",
+      "year": "Year"
+    },
+    "actions": {
+      "viewDetails": "View Details",
+      "exportData": "Export Data",
+      "customize": "Customize",
+      "refresh": "Refresh Data",
+      "filters": "Filters",
+      "walletVerification": "Wallet Verification",
+      "walletVerificationDesc": "Verify your wallet to continue",
+      "enable": "Enable",
+      "addWidget": "Add Widget",
+      "done": "Done",
+      "editLayout": "Edit Layout",
+      "showTasks": "Show my Tasks"
+    },
+    "errors": {
+      "loadFailed": "Failed to load dashboard data. Please try again.",
+      "updateFailed": "Failed to update chart data. Please try again.",
+      "unauthorized": "You need to be logged in to view this content",
+      "sessionExpired": "Your session has expired. Please log in again."
+    }
+  },
+  "menu": {
+    "helpAndSupport": "Help and Support",
+    "dashboard": "Dashboard",
+    "leads": "Leads",
+    "projects": "Projects",
+    "customerManagement": "Customer Management",
+    "customers": "Customers",
+    "deals": "Deals",
+    "calendar": "Calendar",
+    "notes": "Notes",
+    "regions": "Regions",
+    "users": "Users",
+    "reports": "Reports",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "testAuth": "Test Auth"
+  },
+  "calendar": {
+    "month": "Month",
+    "week": "Week",
+    "day": "Day",
+    "newEvent": "New Event",
+    "title": "Calendar",
+    "views": {
+      "day": "Day",
+      "week": "Week",
+      "month": "Month",
+      "agenda": "Agenda"
+    },
+    "eventTypes": {
+      "newProject": "New Project",
+      "completedVisit": "Completed Visit",
+      "plannedVisit": "Planned Visit",
+      "delayedCancelled": "Delayed/Cancelled",
+      "personalNote": "Personal Note",
+      "holiday": "Holiday"
+    },
+    "filters": {
+      "all": "All Events",
+      "visits": "Visits",
+      "projects": "Projects",
+      "personal": "Personal",
+      "holidays": "Holidays"
+    },
+    "eventForm": {
+      "title": "Add New Event",
+      "editTitle": "Edit Event",
+      "titleLabel": "Title",
+      "typeLabel": "Event Type",
+      "startLabel": "Start",
+      "endLabel": "End",
+      "allDay": "All Day",
+      "description": "Description",
+      "recurring": "Recurring Event",
+      "recurrencePattern": {
+        "label": "Recurrence",
+        "daily": "Daily",
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "custom": "Custom..."
+      },
+      "repeatEvery": "Repeat every",
+      "days": "day(s)",
+      "weeks": "week(s)",
+      "months": "month(s)",
+      "years": "year(s)",
+      "end": {
+        "never": "Never",
+        "after": "After",
+        "onDate": "On date",
+        "occurrences": "occurrences"
+      },
+      "assignTo": "Assign To",
+      "location": "Location",
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete"
+    },
+    "conflictAlert": {
+      "title": "Scheduling Conflict",
+      "message": "This event conflicts with an existing one. Do you want to save it anyway?",
+      "viewConflicts": "View Conflicts",
+      "saveAnyway": "Save Anyway"
+    },
+    "noEvents": "No events scheduled",
+    "today": "Today",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "leads": {
+    "addCard": "Add New Card",
+    "title": "Leads Management",
+    "addLead": "Add Lead",
+    "importLeads": "Import Leads",
+    "editLead": "Edit Lead",
+    "deleteLead": "Delete Lead",
+    "leadDetails": "Lead Details",
+    "filters": {
+      "all": "All Leads",
+      "new": "New",
+      "contacted": "Contacted",
+      "qualified": "Qualified",
+      "proposal": "Proposal Sent",
+      "negotiation": "In Negotiation",
+      "closed": "Closed"
+    },
+    "columns": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "source": "Source",
+      "value": "Value",
+      "createdAt": "Created",
+      "assignedTo": "Assigned To",
+      "actions": "Actions"
+    },
+    "status": {
+      "new": "New",
+      "contacted": "Contacted",
+      "qualified": "Qualified",
+      "proposal": "Proposal Sent",
+      "negotiation": "In Negotiation",
+      "closed_won": "Closed Won",
+      "closed_lost": "Closed Lost"
+    },
+    "sources": {
+      "website": "Website",
+      "referral": "Referral",
+      "social": "Social Media",
+      "email": "Email Campaign",
+      "event": "Event",
+      "other": "Other"
+    },
+    "noLeads": "No leads found. Click 'Add New Lead' to get started.",
+    "deleteConfirm": "Are you sure you want to delete this lead?",
+    "deleteSuccess": "Lead deleted successfully",
+    "saveSuccess": "Lead saved successfully"
+  },
+  "sections": {
+    "uiElements": "UI Elements",
+    "icons": "Icons",
+    "extras": "Extras"
+  },
+  "register": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "acceptTermsError": "You must accept the terms and conditions.",
+    "passwordMismatch": "Passwords do not match.",
+    "success": "Registration successful! Please check your email to verify your account.",
+    "error": "Failed to register.",
+    "fullName": "Full Name"
+  },
+  "regions": {
+    "regions": "Regions",
+    "layers": "Map Layers",
+    "addRegion": "Add Region",
+    "editRegion": "Edit Region",
+    "newRegion": "New Region",
+    "name": "Region Name",
+    "description": "Description",
+    "assignedTo": "Assigned To",
+    "status": {
+      "label": "Status",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "color": "Color",
+    "drawTools": "Drawing Tools",
+    "drawPolygon": "Draw Polygon",
+    "drawRectangle": "Draw Rectangle",
+    "drawCircle": "Draw Circle",
+    "drawingInstructions": "Click on the map to start drawing. Double-click to finish.",
+    "noRegionsFound": "No regions found",
+    "lastUpdated": "Last updated",
+    "showHeatmap": "Show Heatmap",
+    "heatmapControls": "Heatmap Controls",
+    "timeFilter": "Time Filter",
+    "timeFilters": {
+      "lastHour": "Last Hour",
+      "today": "Today",
+      "lastWeek": "Last Week",
+      "lastMonth": "Last Month"
+    },
+    "gpsAnalysis": "GPS Analysis",
+    "gpsAnalysisDescription": "Analyze GPS data to identify performance patterns and optimize field operations.",
+    "showRegionsOnHeatmap": "Show Regions on Heatmap",
+    "tabs": {
+      "heatmap": "Heatmap",
+      "regionSelection": "Region Selection"
+    },
+    "errors": {
+      "nameRequired": "Please enter a name for the region"
+    }
+  },
+  "notes": {
+    "searchPlaceHolder": "Search notes...",
+    "recordVoiceNote": "Record voice note",
+    "recording": "Recording...",
+    "clickToRecord": "Click to record a voice note",
+    "micAccessError": "Could not access microphone. Please check your browser permissions.",
+    "voiceNoteAdded": "Voice note added",
+    "addVoiceNote": "Add voice note",
+    "voiceNote": "Voice Note",
+    "play": "Play",
+    "pause": "Pause",
+    "stop": "Stop",
+    "delete": "Delete",
+    "noVoiceNote": "No voice note recorded",
+    "addNote": "Add Note",
+    "editNote": "Edit Note",
+    "title": "Title",
+    "content": "Content",
+    "useHashtags": "Use #hashtags to categorize your notes",
+    "attachments": "Attachments",
+    "voiceNoteAvailable": "Voice note available",
+    "noNotesFound": "No notes found",
+    "filters": "Filters",
+    "hasAttachments": "Has attachments",
+    "hasVoiceNotes": "Has voice notes",
+    "filterByTags": "Filter by tags",
+    "tags": "Tags"
+  },
+  "project": {
+    "title": "Projects",
+    "pageDescription": "Manage your field projects efficiently",
+    "addProject": "Add New Project",
+    "edit": "Edit Project",
+    "add": "Add Project",
+    "delete": "Delete Project",
+    "view": "View Project",
+    "noProjectsFound": "No projects found",
+    "tryAdjustingFilters": "Try adjusting your search or filter criteria",
+    "projects": "projects",
+    "description": "Description",
+    "details": "Project Details",
+    "customerInfo": "Customer Information",
+    "additionalInfo": "Additional Information",
+    "basicInfo": "Basic Information",
+    "statusAndDates": "Status & Dates",
+    "noDescription": "No description provided",
+    "columns": {
+      "name": "Project Name",
+      "description": "Description",
+      "status": "Status",
+      "priority": "Priority",
+      "budget": "Budget",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "customer": "Customer",
+      "customerEmail": "Customer Email",
+      "customerPhone": "Customer Phone",
+      "location": "Location",
+      "manager": "Manager",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "createdBy": "Created By",
+      "projectType": "Project Type"
+    },
+    "status": {
+      "new": "New",
+      "active": "Active",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "onHold": "On Hold",
+      "cancelled": "Cancelled"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "types": {
+      "residential": "Residential",
+      "commercial": "Commercial",
+      "industrial": "Industrial",
+      "infrastructure": "Infrastructure"
+    },
+    "errors": {
+      "loadFailed": "Failed to load projects. Please try again.",
+      "saveFailed": "Failed to save project. Please try again.",
+      "deleteFailed": "Failed to delete project. Please try again.",
+      "nameRequired": "Project name is required",
+      "invalidEmail": "Please enter a valid email address",
+      "invalidBudget": "Please enter a valid budget amount",
+      "endDateBeforeStart": "End date cannot be before start date"
+    },
+    "success": {
+      "created": "Project created successfully",
+      "updated": "Project updated successfully",
+      "deleted": "Project deleted successfully"
+    }
+  },
+  "common": {
+    "add": "Add",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "none": "None",
+    "requiredField": "This field is required",
+    "confirmDelete": "Are you sure you want to delete this item?",
+    "noAttachments": "No attachments",
+    "attachments": "Attachments",
+    "filters": "Filters",
+    "search": "Search...",
+    "refresh": "Refresh",
+    "close": "Close",
+    "language": "Language",
+    "english": "English",
+    "turkish": "Türkçe",
+    "grid": "Grid",
+    "notifications": "Notifications",
+    "mail": "Mail",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "users": {
+    "title": "Users",
+    "subtitle": "Manage application users",
+    "addUser": "Add User",
+    "editUser": "Edit User",
+    "deleteUser": "Delete User",
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "actions": "Actions",
+      "rowsPerPage": "Rows per page:"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "role": "Role"
+    },
+    "roles": {
+      "admin": "Admin",
+      "manager": "Manager",
+      "user": "User"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "actions": {
+      "activate": "Activate",
+      "deactivate": "Deactivate"
+    },
+    "errors": {
+      "loadFailed": "Failed to load users. Please try again.",
+      "saveFailed": "Failed to save user. Please try again.",
+      "deleteFailed": "Failed to delete user. Please try again.",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required"
+    },
+    "noUsersFound": "No users found"
+  },
+  "userDatabase": {
+    "title": "User Database",
+    "subtitle": "Manage user database records",
+    "addUser": "Add User",
+    "editUser": "Edit User",
+    "deleteUser": "Delete User",
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "actions": "Actions",
+      "rowsPerPage": "Rows per page:"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "role": "Role"
+    },
+    "roles": {
+      "admin": "Admin",
+      "manager": "Manager",
+      "user": "User"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "actions": {
+      "activate": "Activate",
+      "deactivate": "Deactivate"
+    },
+    "errors": {
+      "loadFailed": "Failed to load user database records. Please try again.",
+      "saveFailed": "Failed to save user database record. Please try again.",
+      "deleteFailed": "Failed to delete user database record. Please try again.",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required"
+    },
+    "noUsersFound": "No user database records found"
+  },
+  "reports": {
+    "title": "Reports",
+    "description": "Here you can view, download, and manage all system-generated reports.",
+    "generateReport": "Generate Report",
+    "refreshTooltip": "Refresh Report List",
+    "filterTooltip": "Filter Reports",
+    "refresh": "Refresh",
+    "searchPlaceholder": "Search reports...",
+    "filters": "Filters",
+    "clearFilters": "Clear Filters",
+    "type": "Type",
+    "status": "Status",
+    "createdBy": "Created By",
+    "createdAt": "Created At",
+    "size": "Size",
+    "noReportsFound": "No reports found. Try adjusting your filters.",
+    "viewReport": "View Report",
+    "download": "Download",
+    "delete": "Delete",
+    "allTypes": "All Types",
+    "allStatuses": "All Statuses",
+    "fromDate": "From Date",
+    "toDate": "To Date",
+    "applyFilters": "Apply Filters",
+    "reportDetails": "Report Details",
+    "format": "Format",
+    "preview": "Preview",
+    "previewDescription": "In a real application, this would display the actual report content or a preview of the selected report.",
+    "previewOf": "Preview of {{title}}",
+    "table": {
+      "columns": {
+        "name": "Name",
+        "type": "Type",
+        "frequency": "Frequency",
+        "lastSend": "Last Send",
+        "nextSend": "Next Send",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "scheduleActions": {
+      "runNow": "Run Now",
+      "edit": "Edit",
+      "delete": "Delete",
+      "pause": "Pause",
+      "activate": "Activate"
+    },
+    "statuses": {
+      "completed": "Completed",
+      "processing": "Processing",
+      "failed": "Failed",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "types": {
+      "sales": "Sales",
+      "leads": "Leads",
+      "activity": "Activity",
+      "inventory": "Inventory",
+      "financial": "Financial"
+    },
+    "frequencies": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "success": {
+      "reportGenerated": "Report generated successfully!",
+      "deleteSuccess": "Report schedule deleted successfully",
+      "createSuccess": "Report schedule created successfully",
+      "updateSuccess": "Report schedule updated successfully",
+      "triggerSuccess": "Report triggered successfully",
+      "pausedSuccess": "Report schedule paused successfully",
+      "activatedSuccess": "Report schedule activated successfully"
+    },
+    "errors": {
+      "generateFailed": "Failed to generate report. Please try again.",
+      "loadFailed": "Failed to load reports. Please try again.",
+      "nameRequired": "Report name is required",
+      "recipientsRequired": "At least one recipient is required",
+      "deleteFailed": "Failed to delete report schedule",
+      "createFailed": "Failed to create report schedule",
+      "updateFailed": "Failed to update report schedule",
+      "triggerFailed": "Failed to trigger report"
+    },
+    "generatedAt": "Generated At",
+    "metrics": "Metrics",
+    "generating": "Generating...",
+    "addSchedule": "Add Schedule",
+    "editSchedule": "Edit Schedule",
+    "noReports": "No reports found",
+    "never": "Never",
+    "name": "Name",
+    "frequency": "Frequency",
+    "recipients": "Recipients",
+    "lastSent": "Last Sent",
+    "nextSend": "Next Send",
+    "deliveryTime": "Delivery Time",
+    "pdfTemplate": "PDF Template",
+    "activateSchedule": "Activate Schedule",
+    "addRecipient": "Add recipient email",
+    "add": "Add",
+    "noRecipients": "No recipients",
+    "deleteConfirm": "Are you sure you want to delete this report schedule?",
+    "table": {
+      "name": "Report Name",
+      "type": "Type",
+      "frequency": "Frequency",
+      "recipients": "Recipients",
+      "lastSent": "Last Sent",
+      "nextSend": "Next Send",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "actions": {
+      "runNow": "Run Now",
+      "edit": "Edit",
+      "delete": "Delete",
+      "pause": "Pause",
+      "activate": "Activate"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "saveChanges": "Save Changes",
+    "appearance": {
+      "title": "Appearance",
+      "darkMode": "Dark Mode",
+      "lightMode": "Light Mode",
+      "description": "Customize how OptiSaha looks on your device."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "email": "Email Notifications",
+      "emailDescription": "Receive email notifications",
+      "push": "Push Notifications",
+      "pushDescription": "Receive push notifications",
+      "weeklyDigest": "Weekly Digest",
+      "weeklyDigestDescription": "Get a weekly summary of activities"
+    },
+    "language": {
+      "title": "Language & Region",
+      "label": "Language"
+    },
+    "account": {
+      "fullName": "Full Name",
+      "phone": "Phone",
+      "title": "Account Settings",
+      "changePassword": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "deleteAccount": "Delete Account",
+      "deleteWarning": "Once you delete your account, there is no going back. Please be certain.",
+      "deleteConfirmation": "Are you sure you want to delete your account? This action cannot be undone."
+    }
+  },
+  "sources": {
+    "website": "Website",
+    "referral": "Referral",
+    "social": "Social Media",
+    "email": "Email Campaign",
+    "event": "Event",
+    "other": "Other"
+  },
+  "actions": {
+    "view": "View Details",
+    "edit": "Edit",
+    "delete": "Delete",
+    "convert": "Convert to Customer",
+    "send": "Send",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "done": "Done"
+  },
+  "customers": {
+    "title": "Customers",
+    "subtitle": "Manage your customers and client relationships",
+    "addCustomer": "Add Customer",
+    "editCustomer": "Edit Customer",
+    "viewCustomer": "View Customer",
+    "searchPlaceholder": "Search customers...",
+    "noCustomersFound": "No customers found",
+    "tryAdjustingSearch": "Try adjusting your search or add a new customer",
+    "customerDetails": "Customer Details",
+    "contactInformation": "Contact Information",
+    "businessDetails": "Business Details",
+    "addressInformation": "Address Information",
+    "notes": "Notes",
+    "contacts": "Contacts",
+    "deals": "Deals",
+    "customerNotes": "Customer Notes",
+    "addNewContact": "Add New Contact",
+    "addNewNote": "Add New Note",
+    "noContactsFound": "No contacts found",
+    "noNotesFound": "No notes found",
+    "primaryContact": "Primary Contact",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "industry": "Industry",
+    "segment": "Segment",
+    "tier": "Tier",
+    "status": "Status",
+    "address": "Address",
+    "city": "City",
+    "country": "Country",
+    "website": "Website",
+    "position": "Position",
+    "createCustomer": "Create Customer",
+    "saveChanges": "Save Changes",
+    "backToList": "Back to list",
+    "customersCount": "{{count}} customers",
+    "contactsCount": "{{count}} contacts",
+    "notesCount": "{{count}} notes",
+    "statusActive": "Active",
+    "statusInactive": "Inactive",
+    "statusProspect": "Prospect",
+    "tierA": "A",
+    "tierB": "B",
+    "tierC": "C",
+    "segmentEnterprise": "Enterprise",
+    "segmentSMB": "SMB",
+    "segmentIndividual": "Individual",
+    "errors": {
+      "loadFailed": "Failed to load customers. Please try again.",
+      "saveFailed": "Failed to save customer. Please try again.",
+      "deleteFailed": "Failed to delete customer. Please try again.",
+      "nameRequired": "Customer name is required",
+      "invalidEmail": "Please enter a valid email address",
+      "loadContactsFailed": "Failed to load contacts. Please try again.",
+      "addContactFailed": "Failed to add contact. Please try again.",
+      "addNoteFailed": "Failed to add note. Please try again."
+    },
+    "success": {
+      "created": "Customer created successfully",
+      "updated": "Customer updated successfully",
+      "deleted": "Customer deleted successfully",
+      "contactAdded": "Contact added successfully",
+      "noteAdded": "Note added successfully"
+    }
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "customerManagement": "Customer Management",
+    "customers": "Customers",
+    "deals": "Deals",
+    "leads": "Leads",
+    "projects": "Projects",
+    "userDatabase": "User Database",
+    "calendar": "Calendar",
+    "notes": "Notes",
+    "users": "Users",
+    "regions": "Regions",
+    "reports": "Reports",
+    "settings": "Settings",
+    "helpAndSupport": "Help & Support",
+    "support": "Support"
+  },
+  "deals": {
+    "title": "Deals Management",
+    "description": "Manage your customer deals and opportunities.",
+    "createDeal": "Create Deal",
+    "editDeal": "Edit Deal",
+    "searchPlaceholder": "Search deals...",
+    "customerFilter": "Filter by customer",
+    "allStages": "All Stages",
+    "kanbanView": "Kanban View",
+    "tableView": "Table View",
+    "totalDeals": "Total Deals",
+    "totalValue": "Total Value",
+    "noDealsFound": "No deals found matching your criteria.",
+    "noDealsInStage": "No deals in this stage",
+    "noCustomer": "No customer assigned",
+    "noValue": "No value specified",
+    "noCloseDate": "No close date",
+    "noOwner": "No owner assigned",
+    "dealDetails": "Deal Details",
+    "crmInformation": "CRM Information",
+    "pricingAndTiming": "Pricing & Timing",
+    "availabilityAndTargeting": "Availability & Targeting",
+    "legalAndConditions": "Legal & Conditions",
+    "categoryAndTags": "Category & Tags",
+    "termsAndConditions": "Terms and Conditions",
+    "tagsHelperText": "Press Enter to add tags",
+    "stages": {
+      "prospecting": "Prospecting",
+      "qualification": "Qualification",
+      "proposal": "Proposal Sent",
+      "negotiation": "Negotiation",
+      "won": "Won",
+      "lost": "Lost"
+    },
+    "columns": {
+      "title": "Deal Name",
+      "description": "Description",
+      "customer": "Customer",
+      "value": "Value",
+      "stage": "Stage",
+      "closeDate": "Close Date",
+      "probability": "Probability",
+      "owner": "Owner",
+      "notes": "Notes",
+      "dealType": "Deal Type",
+      "discountValue": "Discount Value",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "isActive": "Active",
+      "isFeatured": "Featured",
+      "category": "Category",
+      "tags": "Tags",
+      "terms": "Terms and Conditions"
+    },
+    "errors": {
+      "titleRequired": "Deal name is required",
+      "customerRequired": "Customer is required",
+      "invalidValue": "Please enter a valid deal value",
+      "invalidProbability": "Probability must be between 0 and 100",
+      "endDateBeforeStart": "End date cannot be before start date",
+      "invalidDiscountValue": "Please enter a valid discount value"
+    }
+  },
+  "notes": {
+    "notes": "Notes",
+    "title": "Notes",
+    "searchPlaceholder": "Search notes...",
+    "addTask": "Add Note",
+    "untitledNote": "Untitled Note",
+    "noNotesFound": "No notes found",
+    "noNoteSelected": "No note selected",
+    "selectOrCreateNote": "Select a note from the list or create a new one",
+    "createFirstNote": "Create Your First Note",
+    "tryDifferentSearch": "Try a different search term or create a new note.",
+    "deleteConfirm": "Are you sure you want to delete this note?",
+    "editorPlaceholder": "Start writing your note here...",
+    "recordVoiceNote": "Record voice note",
+    "recording": "Recording...",
+    "clickToRecord": "Click to record a voice note",
+    "micAccessError": "Could not access microphone. Please check your browser permissions.",
+    "voiceNoteAdded": "Voice note added",
+    "addVoiceNote": "Add voice note",
+    "voiceNote": "Voice Note",
+    "play": "Play",
+    "pause": "Pause",
+    "stop": "Stop",
+    "delete": "Delete",
+    "noVoiceNote": "No voice note recorded",
+    "editNote": "Edit Note",
+    "content": "Content",
+    "useHashtags": "Use #hashtags to categorize your notes",
+    "attachments": "Attachments",
+    "voiceNoteAvailable": "Voice note available",
+    "filters": "Filters",
+    "hasAttachments": "Has attachments",
+    "hasVoiceNotes": "Has voice notes",
+    "filterByTags": "Filter by tags",
+    "tags": "Tags"
+  },
+  "userDatabase": {
+    "title": "User Database",
+    "addUser": "Add User",
+    "editUser": "Edit User",
+    "noUsersFound": "No users found",
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "rowsPerPage": "Rows per page"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "role": "Role"
+    },
+    "roles": {
+      "admin": "Administrator",
+      "manager": "Manager",
+      "user": "User"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "actions": {
+      "activate": "Activate User",
+      "deactivate": "Deactivate User"
+    },
+    "errors": {
+      "loadFailed": "Failed to load users",
+      "saveFailed": "Failed to save user",
+      "deleteFailed": "Failed to delete user",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required"
+    }
+  }
+}

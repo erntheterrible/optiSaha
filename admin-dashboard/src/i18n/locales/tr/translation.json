@@ -1,0 +1,787 @@
+{
+  "app": {
+    "name": "OptiSaha"
+  },
+  "dashboard": {
+    "comparison": {
+      "title": "Karşılaştırma"
+    },
+    "kpi": {
+      "annualProfits": "Yıllık Kar"
+    },
+    "stats": {
+      "totalProjects": "Toplam Proje",
+      "completedProjects": "Tamamlanan Projeler",
+      "activeVisits": "Aktif Ziyaretler",
+      "totalRevenue": "Toplam Gelir",
+      "avgVisitDuration": "Ort. Ziyaret Süresi",
+      "totalUsers": "Toplam Kullanıcı",
+      "newUsers": "Yeni Kullanıcılar",
+      "totalLeads": "Toplam Potansiyel Müşteri",
+      "convertedLeads": "Dönüşen Müşteriler",
+      "totalSales": "Toplam Satış",
+      "totalVisits": "Toplam Ziyaret",
+      "avgProjectCost": "Ort. Proje Maliyeti",
+      "targetSuccessRate": "Hedef Başarı Oranı"
+    },
+    "charts": {
+      "revenueOverview": "Gelir Özeti",
+      "userActivity": "Kullanıcı Etkinliği",
+      "deviceDistribution": "Cihaz Dağılımı",
+      "trafficSources": "Trafik Kaynakları",
+      "projectStatus": "Proje Durumu",
+      "customerSatisfaction": "Müşteri Memnuniyeti",
+      "revenue": "Gelir",
+      "count": "Adet",
+      "teamMember": "Ekip Üyesi",
+      "completedProjects": "Tamamlanan Projeler",
+      "date": "Tarih",
+      "activityManager": "Aktivite Yöneticisi",
+      "teamPerformance": "Takım Performansı"
+    },
+    "actions": {
+      "viewDetails": "Detayları Görüntüle",
+      "exportData": "Dışa Aktar",
+      "customize": "Özelleştir",
+      "refresh": "Yenile",
+      "filters": "Filtreler",
+      "walletVerification": "Cüzdan Doğrulama",
+      "walletVerificationDesc": "Devam etmek için cüzdanınızı doğrulayın",
+      "enable": "Etkinleştir",
+      "addWidget": "Araç Ekle",
+      "done": "Bitti",
+      "editLayout": "Düzeni Düzenle",
+      "showTasks": "Görevlerimi Göster"
+    },
+    "activity": {
+      "search": "Aktivite Ara",
+      "team": "Takım",
+      "insights": "Öngörüler",
+      "today": "Bugün"
+    }
+  },
+  "menu": {
+    "helpAndSupport": "Yardım ve Destek",
+    "dashboard": "Kontrol Paneli",
+    "leads": "Potansiyel Müşteriler",
+    "projects": "Projeler",
+    "customerManagement": "Müşteri Yönetimi",
+    "customers": "Müşteriler",
+    "deals": "Fırsatlar",
+    "userDatabase": "Kullanıcı Veritabanı",
+    "calendar": "Takvim",
+    "notes": "Notlar",
+    "regions": "Bölgeler",
+    "users": "Kullanıcılar",
+    "reports": "Raporlar",
+    "settings": "Ayarlar",
+    "profile": "Profil",
+    "logout": "Çıkış Yap",
+    "testAuth": "Kimlik Doğrulama Testi",
+    "support": "Destek"
+  },
+  "deals": {
+    "title": "Fırsat Yönetimi",
+    "description": "Müşteri fırsatlarınızı ve fırsatlarınızı buradan yönetin.",
+    "createDeal": "Fırsat Oluştur",
+    "editDeal": "Fırsatı Düzenle",
+    "searchPlaceholder": "Fırsat ara...",
+    "customerFilter": "Müşteriye göre filtrele",
+    "allStages": "Tüm Aşamalar",
+    "kanbanView": "Kanban Görünümü",
+    "tableView": "Tablo Görünümü",
+    "totalDeals": "Toplam Fırsat",
+    "totalValue": "Toplam Değer",
+    "noDealsFound": "Kriterlerinize uygun fırsat bulunamadı.",
+    "noDealsInStage": "Bu aşamada fırsat bulunmamaktadır",
+    "noCustomer": "Müşteri atanmamış",
+    "noValue": "Değer belirtilmemiş",
+    "noCloseDate": "Kapanış tarihi yok",
+    "noOwner": "Sahip atanmamış",
+    "dealDetails": "Fırsat Detayları",
+    "crmInformation": "CRM Bilgileri",
+    "pricingAndTiming": "Fiyatlandırma ve Zamanlama",
+    "availabilityAndTargeting": "Kullanılabilirlik ve Hedefleme",
+    "legalAndConditions": "Yasal ve Koşullar",
+    "categoryAndTags": "Kategori ve Etiketler",
+    "termsAndConditions": "Şartlar ve Koşullar",
+    "tagsHelperText": "Etiket eklemek için Enter tuşuna basın",
+    "stages": {
+      "prospecting": "Potansiyel Müşteri Edinme",
+      "qualification": "Niteleme",
+      "proposal": "Teklif Gönderildi",
+      "negotiation": "Müzakere",
+      "won": "Kazanıldı",
+      "lost": "Kaybedildi"
+    },
+    "columns": {
+      "title": "Fırsat Adı",
+      "description": "Açıklama",
+      "customer": "Müşteri",
+      "value": "Değer",
+      "stage": "Aşama",
+      "closeDate": "Kapanış Tarihi",
+      "probability": "Olasılık",
+      "owner": "Sahip",
+      "notes": "Notlar",
+      "dealType": "Fırsat Türü",
+      "discountValue": "İndirim Değeri",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi",
+      "isActive": "Aktif",
+      "isFeatured": "Öne Çıkan",
+      "category": "Kategori",
+      "tags": "Etiketler",
+      "terms": "Şartlar ve Koşullar"
+    },
+    "errors": {
+      "titleRequired": "Fırsat adı gereklidir",
+      "customerRequired": "Müşteri gereklidir",
+      "invalidValue": "Lütfen geçerli bir fırsat değeri girin",
+      "invalidProbability": "Olasılık 0 ile 100 arasında olmalıdır",
+      "endDateBeforeStart": "Bitiş tarihi başlangıç tarihinden önce olamaz",
+      "invalidDiscountValue": "Lütfen geçerli bir indirim değeri girin"
+    }
+  },
+  "calendar": {
+    "month": "Ay",
+    "week": "Hafta",
+    "day": "Gün",
+    "title": "Takvim",
+    "views": {
+      "day": "Günlük",
+      "week": "Haftalık",
+      "month": "Aylık",
+      "agenda": "Ajanda"
+    },
+    "eventTypes": {
+      "newProject": "Yeni Proje",
+      "completedVisit": "Tamamlanan Ziyaret",
+      "plannedVisit": "Planlanan Ziyaret",
+      "delayedCancelled": "Gecikmiş/İptal Edilmiş",
+      "personalNote": "Kişisel Not",
+      "holiday": "Tatil"
+    },
+    "filters": {
+      "all": "Tüm Etkinlikler",
+      "visits": "Ziyaretler",
+      "projects": "Projeler",
+      "personal": "Kişisel",
+      "holidays": "Tatiller"
+    },
+    "eventForm": {
+      "title": "Yeni Etkinlik Ekle",
+      "editTitle": "Etkinliği Düzenle",
+      "titleLabel": "Başlık",
+      "typeLabel": "Etkinlik Türü",
+      "startLabel": "Başlangıç",
+      "endLabel": "Bitiş",
+      "allDay": "Tüm Gün",
+      "description": "Açıklama",
+      "recurring": "Tekrarlanan Etkinlik",
+      "recurrencePattern": {
+        "label": "Tekrarlama",
+        "daily": "Günlük",
+        "weekly": "Haftalık",
+        "monthly": "Aylık",
+        "yearly": "Yıllık",
+        "custom": "Özel..."
+      },
+      "repeatEvery": "Tekrar sıklığı",
+      "days": "günde bir",
+      "weeks": "haftada bir",
+      "months": "ayda bir",
+      "years": "yılda bir",
+      "end": {
+        "never": "Asla",
+        "after": "Sonra",
+        "onDate": "Tarihinde",
+        "occurrences": "tekrar"
+      },
+      "assignTo": "Atanan Kişi",
+      "location": "Konum",
+      "save": "Kaydet",
+      "cancel": "İptal",
+      "delete": "Sil"
+    },
+    "conflictAlert": {
+      "title": "Çakışma Uyarısı",
+      "message": "Bu etkinlik mevcut bir etkinlikle çakışıyor. Yine de kaydetmek istiyor musunuz?",
+      "viewConflicts": "Çakışmaları Görüntüle",
+      "saveAnyway": "Yine de Kaydet"
+    },
+    "noEvents": "Planlanmış etkinlik yok",
+    "today": "Bugün",
+    "previous": "Önceki",
+    "next": "Sonraki"
+  },
+  "leads": {
+    "addCard": "Yeni Kart Ekle",
+    "title": "Potansiyel Müşteri Yönetimi",
+    "addLead": "Yeni Potansiyel Ekle",
+    "importLeads": "Potansiyel İçe Aktar",
+    "editLead": "Potansiyel Müşteriyi Düzenle",
+    "deleteLead": "Potansiyel Müşteriyi Sil",
+    "leadDetails": "Potansiyel Müşteri Detayları",
+    "filters": {
+      "all": "Tüm Potansiyel Müşteriler",
+      "new": "Yeni",
+      "contacted": "İletişime Geçildi",
+      "qualified": "Nitelikli",
+      "proposal": "Teklif Gönderildi",
+      "negotiation": "Görüşme Aşamasında",
+      "closed": "Kapatıldı"
+    },
+    "columns": {
+      "name": "Ad Soyad",
+      "company": "Firma",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "status": "Durum",
+      "source": "Kaynak",
+      "value": "Değer",
+      "createdAt": "Oluşturulma Tarihi",
+      "assignedTo": "Atanan Kişi",
+      "actions": "İşlemler"
+    },
+    "status": {
+      "new": "Yeni",
+      "contacted": "İletişime Geçildi",
+      "qualified": "Nitelikli",
+      "proposal": "Teklif Gönderildi",
+      "negotiation": "Görüşme Aşamasında",
+      "closed_won": "Kazanıldı",
+      "closed_lost": "Kaybedildi"
+    },
+    "sources": {
+      "website": "Web Sitesi",
+      "referral": "Tavsiye",
+      "social": "Sosyal Medya",
+      "email": "E-posta Kampanyası",
+      "event": "Etkinlik",
+      "other": "Diğer"
+    },
+    "actions": {
+      "view": "Detayları Görüntüle",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "convert": "Müşteriye Dönüştür"
+    },
+    "noLeads": "Potansiyel müşteri bulunamadı. Başlamak için 'Yeni Potansiyel Müşteri Ekle'yi tıklayın.",
+    "deleteConfirm": "Bu potansiyel müşteriyi silmek istediğinize emin misiniz?",
+    "deleteSuccess": "Potansiyel müşteri başarıyla silindi",
+    "saveSuccess": "Potansiyel müşteri başarıyla kaydedildi"
+  },
+  "sections": {
+    "uiElements": "Arayüz Öğeleri",
+    "icons": "İkonlar",
+    "extras": "Ekstralar"
+  },
+  "notes": {
+    "notes": "Notlar",
+    "title": "Notlar",
+    "searchPlaceholder": "Notlarda ara...",
+    "addTask": "Not Ekle",
+    "untitledNote": "Adsız Not",
+    "noNotesFound": "Hiç not bulunamadı",
+    "noNoteSelected": "Hiç not seçilmedi",
+    "selectOrCreateNote": "Listeden bir not seçin veya yeni bir not oluşturun",
+    "createFirstNote": "İlk Notunuzu Oluşturun",
+    "tryDifferentSearch": "Farklı bir arama terimi deneyin veya yeni bir not oluşturun.",
+    "deleteConfirm": "Bu notu silmek istediğinizden emin misiniz?",
+    "editorPlaceholder": "Notunuzu buraya yazmaya başlayın...",
+    "recordVoiceNote": "Sesli not kaydet",
+    "recording": "Kayıt yapılıyor...",
+    "clickToRecord": "Sesli not kaydetmek için tıklayın",
+    "micAccessError": "Mikrofona erişilemedi. Lütfen tarayıcı izinlerinizi kontrol edin.",
+    "voiceNoteAdded": "Sesli not eklendi",
+    "addVoiceNote": "Sesli not ekle",
+    "voiceNote": "Sesli Not",
+    "play": "Oynat",
+    "pause": "Duraklat",
+    "stop": "Durdur",
+    "delete": "Sil",
+    "noVoiceNote": "Kayıtlı ses notu yok",
+    "addNote": "Not Ekle",
+    "editNote": "Notu Düzenle",
+    "content": "İçerik",
+    "useHashtags": "Notlarınızı kategorilendirmek için #etiket kullanın",
+    "attachments": "Ekler",
+    "voiceNoteAvailable": "Sesli not mevcut",
+    "filters": "Filtreler",
+    "hasAttachments": "Eki olanlar",
+    "hasVoiceNotes": "Sesli notu olanlar",
+    "filterByTags": "Etiketlere göre filtrele",
+    "tags": "Etiketler"
+  },
+  "register": {
+    "email": "E-posta",
+    "password": "Şifre",
+    "confirmPassword": "Şifreyi Onayla",
+    "acceptTermsError": "Kullanım koşullarını kabul etmelisiniz.",
+    "passwordMismatch": "Şifreler eşleşmiyor.",
+    "success": "Kayıt başarılı! Lütfen e-posta adresinizi kontrol edin.",
+    "error": "Kayıt işlemi başarısız oldu.",
+    "fullName": "Ad Soyad"
+  },
+  "regions": {
+    "regions": "Bölgeler",
+    "layers": "Harita Katmanları",
+    "addRegion": "Bölge Ekle",
+    "editRegion": "Bölgeyi Düzenle",
+    "newRegion": "Yeni Bölge",
+    "name": "Bölge Adı",
+    "description": "Açıklama",
+    "assignedTo": "Atanan Kişi",
+    "status": {
+      "label": "Durum",
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
+    "color": "Renk",
+    "drawTools": "Çizim Araçları",
+    "drawPolygon": "Çokgen Çiz",
+    "drawRectangle": "Dikdörtgen Çiz",
+    "drawCircle": "Daire Çiz",
+    "drawingInstructions": "Çizmeye başlamak için haritaya tıklayın. Bitirmek için çift tıklayın.",
+    "noRegionsFound": "Bölge bulunamadı",
+    "lastUpdated": "Son güncelleme",
+    "showHeatmap": "Isı Haritasını Göster",
+    "heatmapControls": "Isı Haritası Kontrolleri",
+    "timeFilter": "Zaman Filtresi",
+    "timeFilters": {
+      "lastHour": "Son Saat",
+      "today": "Bugün",
+      "lastWeek": "Geçen Hafta",
+      "lastMonth": "Geçen Ay"
+    },
+    "gpsAnalysis": "GPS Analizi",
+    "gpsAnalysisDescription": "GPS verilerini analiz ederek performans kalıplarını belirleyin ve saha operasyonlarını optimize edin.",
+    "showRegionsOnHeatmap": "Bölgeleri Isı Haritasında Göster",
+    "tabs": {
+      "heatmap": "Isı Haritası",
+      "regionSelection": "Bölge Seçimi"
+    },
+    "errors": {
+      "nameRequired": "Lütfen bölge için bir isim girin"
+    }
+  },
+  "projects": {
+    "title": "Projeler",
+    "pageDescription": "Saha projelerinizi verimli bir şekilde yönetin",
+    "addProject": "Yeni Proje Ekle",
+    "edit": "Projeyi Düzenle",
+    "add": "Proje Ekle",
+    "delete": "Projeyi Sil",
+    "view": "Projeyi Görüntüle",
+    "noProjectsFound": "Proje bulunamadı",
+    "tryAdjustingFilters": "Arama veya filtre kriterlerinizi ayarlamayı deneyin",
+    "projects": "projeler",
+    "description": "Açıklama",
+    "details": "Proje Detayları",
+    "customerInfo": "Müşteri Bilgileri",
+    "additionalInfo": "Ek Bilgiler",
+    "basicInfo": "Temel Bilgiler",
+    "statusAndDates": "Durum & Tarihler",
+    "noDescription": "Açıklama sağlanmadı",
+    "columns": {
+      "name": "Proje Adı",
+      "description": "Açıklama",
+      "status": "Durum",
+      "priority": "Öncelik",
+      "budget": "Bütçe",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi",
+      "customer": "Müşteri",
+      "customerEmail": "Müşteri E-posta",
+      "customerPhone": "Müşteri Telefon",
+      "location": "Konum",
+      "manager": "Yönetici",
+      "createdAt": "Oluşturulma Tarihi",
+      "updatedAt": "Güncellenme Tarihi",
+      "createdBy": "Oluşturan",
+      "projectType": "Proje Türü"
+    },
+    "status": {
+      "new": "Yeni",
+      "active": "Aktif",
+      "inProgress": "Devam Ediyor",
+      "completed": "Tamamlandı",
+      "onHold": "Beklemede",
+      "cancelled": "İptal Edildi"
+    },
+    "priority": {
+      "low": "Düşük",
+      "medium": "Orta",
+      "high": "Yüksek",
+      "urgent": "Acil"
+    },
+    "types": {
+      "residential": "Konut",
+      "commercial": "Ticari",
+      "industrial": "Endüstriyel",
+      "infrastructure": "Altyapı"
+    },
+    "errors": {
+      "loadFailed": "Projeler yüklenemedi. Lütfen tekrar deneyin.",
+      "saveFailed": "Proje kaydedilemedi. Lütfen tekrar deneyin.",
+      "deleteFailed": "Proje silinemedi. Lütfen tekrar deneyin.",
+      "nameRequired": "Proje adı gereklidir",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+      "invalidBudget": "Lütfen geçerli bir bütçe miktarı girin",
+      "endDateBeforeStart": "Bitiş tarihi başlangıç tarihinden önce olamaz"
+    },
+    "success": {
+      "created": "Proje başarıyla oluşturuldu",
+      "updated": "Proje başarıyla güncellendi",
+      "deleted": "Proje başarıyla silindi"
+    }
+  },
+  "common": {
+    "add": "Ekle",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "none": "Yok",
+    "requiredField": "Bu alan zorunludur",
+    "confirmDelete": "Bu öğeyi silmek istediğinizden emin misiniz?",
+    "noAttachments": "Ek dosya yok",
+    "attachments": "Ekler",
+    "dashboard": "Gösterge Paneli",
+    "users": "Kullanıcılar",
+    "regions": "Bölgeler",
+    "reports": "Raporlar",
+    "settings": "Ayarlar",
+    "helpAndSupport": "Yardım & Destek",
+    "logout": "Çıkış Yap",
+    "language": "Dil",
+    "english": "İngilizce",
+    "turkish": "Türkçe",
+    "grid": "Izgara",
+    "notifications": "Bildirimler",
+    "mail": "Posta",
+    "profile": "Profil",
+    "search": "Ara...",
+    "refresh": "Yenile",
+    "viewDetails": "Detayları Görüntüle",
+    "exportData": "Veriyi Dışa Aktar",
+    "customize": "Özelleştir",
+    "close": "Kapat",
+    "min": "dak"
+  },
+
+
+  "reports": {
+    "title": "Raporlar",
+    "description": "Burada sistem tarafından oluşturulan tüm raporları görüntüleyebilir, indirebilir ve yönetebilirsiniz.",
+    "generateReport": "Rapor Oluştur",
+    "refreshTooltip": "Rapor Listesini Yenile",
+    "filterTooltip": "Raporları Filtrele",
+    "refresh": "Yenile",
+    "searchPlaceholder": "Raporlarda ara...",
+    "filters": "Filtreler",
+    "clearFilters": "Filtreleri Temizle",
+    "noReportsFound": "Rapor bulunamadı. Filtrelerinizi değiştirmeyi deneyin.",
+    "viewReport": "Raporu Görüntüle",
+    "download": "İndir",
+    "delete": "Sil",
+    "allTypes": "Tüm Türler",
+    "allStatuses": "Tüm Durumlar",
+    "fromDate": "Başlangıç Tarihi",
+    "toDate": "Bitiş Tarihi",
+    "applyFilters": "Filtreleri Uygula",
+    "reportDetails": "Rapor Detayları",
+    "format": "Format",
+    "preview": "Önizleme",
+    "previewDescription": "Gerçek bir uygulamada, bu alan seçilen raporun içeriğini veya bir önizlemesini gösterir.",
+    "previewOf": "{{title}} Önizlemesi",
+    "table": {
+      "columns": {
+        "name": "Rapor Adı",
+        "type": "Tür",
+        "frequency": "Sıklık",
+        "lastSend": "Son Gönderim",
+        "nextSend": "Sonraki Gönderim",
+        "status": "Durum",
+        "actions": "İşlemler"
+      }
+    },
+    "scheduleActions": {
+      "runNow": "Şimdi Çalıştır",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "pause": "Duraklat",
+      "activate": "Etkinleştir"
+    },
+    "statuses": {
+      "completed": "Tamamlandı",
+      "processing": "İşleniyor",
+      "failed": "Başarısız",
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
+    "types": {
+      "sales": "Satışlar",
+      "leads": "Fırsatlar",
+      "activity": "Aktivite",
+      "inventory": "Envanter",
+      "financial": "Finansal"
+    },
+    "frequencies": {
+      "daily": "Günlük",
+      "weekly": "Haftalık",
+      "monthly": "Aylık"
+    },
+    "success": {
+      "reportGenerated": "Rapor başarıyla oluşturuldu!",
+      "deleteSuccess": "Rapor zamanlaması başarıyla silindi",
+      "createSuccess": "Rapor zamanlaması başarıyla oluşturuldu",
+      "updateSuccess": "Rapor zamanlaması başarıyla güncellendi",
+      "triggerSuccess": "Rapor başarıyla tetiklendi",
+      "pausedSuccess": "Rapor zamanlaması başarıyla duraklatıldı",
+      "activatedSuccess": "Rapor zamanlaması başarıyla etkinleştirildi"
+    },
+    "errors": {
+      "generateFailed": "Rapor oluşturulamadı. Lütfen tekrar deneyin.",
+      "loadFailed": "Raporlar yüklenemedi. Lütfen tekrar deneyin.",
+      "nameRequired": "Rapor adı gereklidir",
+      "recipientsRequired": "En az bir alıcı gereklidir",
+      "deleteFailed": "Rapor zamanlaması silinemedi",
+      "createFailed": "Rapor zamanlaması oluşturulamadı",
+      "updateFailed": "Rapor zamanlaması güncellenemedi",
+      "triggerFailed": "Rapor tetiklenemedi"
+    },
+    "generatedAt": "Oluşturulma Tarihi",
+    "metrics": "Metrikler",
+    "generating": "Oluşturuluyor...",
+    "addSchedule": "Zamanlama Ekle",
+    "editSchedule": "Zamanlamayı Düzenle",
+    "noReports": "Rapor bulunamadı",
+    "never": "Asla",
+    "name": "İsim",
+    "frequency": "Sıklık",
+    "recipients": "Alıcılar",
+    "lastSent": "Son Gönderim",
+    "nextSend": "Sonraki Gönderim",
+    "deliveryTime": "Teslimat Zamanı",
+    "pdfTemplate": "PDF Şablonu",
+    "activateSchedule": "Zamanlamayı Etkinleştir",
+    "addRecipient": "Alıcı e-posta ekle",
+    "add": "Ekle",
+    "noRecipients": "Alıcı yok",
+    "deleteConfirm": "Bu rapor zamanlamasını silmek istediğinizden emin misiniz?"
+  },
+  "users": {
+    "title": "Kullanıcılar",
+    "subtitle": "Uygulama kullanıcılarını yönetin",
+    "addUser": "Kullanıcı Ekle",
+    "editUser": "Kullanıcıyı Düzenle",
+    "deleteUser": "Kullanıcıyı Sil",
+    "table": {
+      "name": "Ad",
+      "email": "E-posta",
+      "role": "Rol",
+      "status": "Durum",
+      "actions": "İşlemler",
+      "rowsPerPage": "Sayfa başına satır:"
+    },
+    "form": {
+      "name": "Tam Ad",
+      "email": "E-posta Adresi",
+      "role": "Rol"
+    },
+    "roles": {
+      "admin": "Yönetici",
+      "manager": "Müdür",
+      "user": "Kullanıcı"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
+    "actions": {
+      "activate": "Etkinleştir",
+      "deactivate": "Devre Dışı Bırak"
+    },
+    "errors": {
+      "loadFailed": "Kullanıcılar yüklenemedi. Lütfen tekrar deneyin.",
+      "saveFailed": "Kullanıcı kaydedilemedi. Lütfen tekrar deneyin.",
+      "deleteFailed": "Kullanıcı silinemedi. Lütfen tekrar deneyin.",
+      "nameRequired": "Ad alanı zorunludur",
+      "emailRequired": "E-posta alanı zorunludur"
+    },
+    "noUsersFound": "Kullanıcı bulunamadı"
+  },
+
+  "settings": {
+    "title": "Ayarlar",
+    "saveChanges": "Değişiklikleri Kaydet",
+    "appearance": {
+      "title": "Görünüm",
+      "darkMode": "Karanlık Mod",
+      "lightMode": "Aydınlık Mod",
+      "description": "OptiSaha'nın cihazınızdaki görünümünü özelleştirin."
+    },
+    "notifications": {
+      "title": "Bildirimler",
+      "email": "E-posta Bildirimleri",
+      "emailDescription": "E-posta bildirimleri alın",
+      "push": "Anlık Bildirimler",
+      "pushDescription": "Anlık bildirimler alın",
+      "weeklyDigest": "Haftalık Özet",
+      "weeklyDigestDescription": "Haftalık aktivite özetini alın"
+    },
+    "language": {
+      "title": "Dil & Bölge",
+      "label": "Dil"
+    },
+    "account": {
+      "title": "Hesap Ayarları",
+      "fullName": "Tam Ad",
+      "phone": "Telefon",
+      "changePassword": "Şifreyi Değiştir",
+      "currentPassword": "Mevcut Şifre",
+      "newPassword": "Yeni Şifre",
+      "confirmNewPassword": "Yeni Şifreyi Onayla",
+      "updatePassword": "Şifreyi Güncelle",
+      "deleteAccount": "Hesabı Sil",
+      "deleteWarning": "Hesabınızı sildiğinizde geri dönüşü yoktur. Lütfen emin olun.",
+      "deleteConfirmation": "Hesabınızı silmek istediğinize emin misiniz? Bu işlem geri alınamaz."
+    }
+  },
+  "sources": {
+    "website": "Web Sitesi",
+    "referral": "Tavsiye",
+    "social": "Sosyal Medya",
+    "email": "E-posta Kampanyası",
+    "event": "Etkinlik",
+    "other": "Diğer"
+  },
+
+  "customers": {
+    "title": "Müşteriler",
+    "subtitle": "Müşterilerinizi ve müşteri ilişkilerinizi yönetin",
+    "addCustomer": "Müşteri Ekle",
+    "editCustomer": "Müşteriyi Düzenle",
+    "viewCustomer": "Müşteriyi Görüntüle",
+    "searchPlaceholder": "Müşteri ara...",
+    "noCustomersFound": "Müşteri bulunamadı",
+    "tryAdjustingSearch": "Arama kriterlerinizi ayarlamayı deneyin veya yeni bir müşteri ekleyin",
+    "customerDetails": "Müşteri Detayları",
+    "contactInformation": "İletişim Bilgileri",
+    "businessDetails": "İş Bilgileri",
+    "addressInformation": "Adres Bilgileri",
+    "notes": "Notlar",
+    "contacts": "Kişi Bilgileri",
+    "deals": "Fırsatlar",
+    "customerNotes": "Müşteri Notları",
+    "addNewContact": "Yeni Kişi Ekle",
+    "addNewNote": "Yeni Not Ekle",
+    "noContactsFound": "Kişi bulunamadı",
+    "noNotesFound": "Not bulunamadı",
+    "primaryContact": "Birincil Kişi",
+    "name": "Ad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "industry": "Sektör",
+    "segment": "Segment",
+    "tier": "Kademe",
+    "status": "Durum",
+    "address": "Adres",
+    "city": "Şehir",
+    "country": "Ülke",
+    "website": "Web Sitesi",
+    "position": "Pozisyon",
+    "createCustomer": "Müşteri Oluştur",
+    "saveChanges": "Değişiklikleri Kaydet",
+    "backToList": "Listeye dön",
+    "customersCount": "{{count}} müşteri",
+    "contactsCount": "{{count}} kişi",
+    "notesCount": "{{count}} not",
+    "statusActive": "Aktif",
+    "statusInactive": "Pasif",
+    "statusProspect": "Potansiyel",
+    "tierA": "A",
+    "tierB": "B",
+    "tierC": "C",
+    "segmentEnterprise": "Kurumsal",
+    "segmentSMB": "KOBİ",
+    "segmentIndividual": "Bireysel",
+    "errors": {
+      "loadFailed": "Müşteriler yüklenemedi. Lütfen tekrar deneyin.",
+      "saveFailed": "Müşteri kaydedilemedi. Lütfen tekrar deneyin.",
+      "deleteFailed": "Müşteri silinemedi. Lütfen tekrar deneyin.",
+      "nameRequired": "Müşteri adı gereklidir",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+      "loadContactsFailed": "Kişiler yüklenemedi. Lütfen tekrar deneyin.",
+      "addContactFailed": "Kişi eklenemedi. Lütfen tekrar deneyin.",
+      "addNoteFailed": "Not eklenemedi. Lütfen tekrar deneyin."
+    },
+    "success": {
+      "created": "Müşteri başarıyla oluşturuldu",
+      "updated": "Müşteri başarıyla güncellendi",
+      "deleted": "Müşteri başarıyla silindi",
+      "contactAdded": "Kişi başarıyla eklendi",
+      "noteAdded": "Not başarıyla eklendi"
+    }
+  },
+  "userDatabase": {
+    "title": "Kullanıcı Veritabanı",
+    "addUser": "Kullanıcı Ekle",
+    "editUser": "Kullanıcıyı Düzenle",
+    "noUsersFound": "Kullanıcı bulunamadı",
+    "table": {
+      "name": "Ad",
+      "email": "E-posta",
+      "role": "Rol",
+      "status": "Durum",
+      "rowsPerPage": "Sayfa başına satır"
+    },
+    "form": {
+      "name": "Tam Ad",
+      "email": "E-posta Adresi",
+      "role": "Rol"
+    },
+    "roles": {
+      "admin": "Yönetici",
+      "manager": "Müdür",
+      "user": "Kullanıcı"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
+    "actions": {
+      "activate": "Kullanıcıyı Etkinleştir",
+      "deactivate": "Kullanıcıyı Devre Dışı Bırak"
+    },
+    "errors": {
+      "loadFailed": "Kullanıcılar yüklenemedi",
+      "saveFailed": "Kullanıcı kaydedilemedi",
+      "deleteFailed": "Kullanıcı silinemedi",
+      "nameRequired": "Ad alanı zorunludur",
+      "emailRequired": "E-posta alanı zorunludur"
+    }
+  },
+  "notes": {
+    "title": "Notlar",
+    "searchPlaceholder": "Notlarda ara...",
+    "addTask": "Not Ekle",
+    "noNotesFound": "Hiç not bulunamadı",
+    "tryDifferentSearch": "Farklı bir arama terimi deneyin veya yeni bir not oluşturun.",
+    "deleteConfirm": "Bu notu silmek istediğinizden emin misiniz?",
+    "recordVoiceNote": "Sesli not kaydet",
+    "editNote": "Notu Düzenle",
+    "delete": "Sil",
+    "voiceNoteAvailable": "Sesli not mevcut",
+    "attachments": "Ekler",
+    "categories": {
+      "work": "İş",
+      "personal": "Kişisel",
+      "meeting": "Toplantı",
+      "reminder": "Hatırlatıcı",
+      "idea": "Fikir"
+    }
+  }
+}

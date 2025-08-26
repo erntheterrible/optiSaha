@@ -1,0 +1,457 @@
+import React, { useState } from 'react';
+import { 
+  Box, 
+  Typography, 
+  Grid, 
+  useTheme, 
+  IconButton, 
+  Menu, 
+  MenuItem, 
+  Button,
+  Stack,
+  CircularProgress,
+  Skeleton
+} from '@mui/material';
+import {
+  People as PeopleIcon,
+  Assignment as AssignmentIcon,
+  BarChart as BarChartIcon,
+  Equalizer as EqualizerIcon,
+  Refresh as RefreshIcon,
+  FilterList as FilterListIcon,
+  ArrowUpward as ArrowUpwardIcon,
+  ArrowDownward as ArrowDownwardIcon
+} from '@mui/icons-material';
+import {
+  BarChart, 
+  Bar, 
+  LineChart, 
+  Line, 
+  PieChart, 
+  Pie, 
+  Cell,
+  XAxis, 
+  YAxis, 
+  CartesianGrid, 
+  Tooltip, 
+  Legend, 
+  ResponsiveContainer,
+  AreaChart,
+  Area,
+  RadialBarChart,
+  RadialBar
+} from 'recharts';
+
+// Import components
+import ChartCard from './components/ChartCard';
+import StatCard from './components/StatCard';
+
+// Mock data for charts
+const salesData = [
+  { name: 'Jan', value: 4000 },
+  { name: 'Feb', value: 3000 },
+  { name: 'Mar', value: 5000 },
+  { name: 'Apr', value: 2780 },
+  { name: 'May', value: 1890 },
+  { name: 'Jun', value: 2390 },
+  { name: 'Jul', value: 3490 },
+  { name: 'Aug', value: 4000 },
+  { name: 'Sep', value: 4500 },
+  { name: 'Oct', value: 5200 },
+  { name: 'Nov', value: 4800 },
+  { name: 'Dec', value: 6000 },
+];
+
+const userActivityData = [
+  { name: 'Mon', active: 4000, new: 2400 },
+  { name: 'Tue', active: 3000, new: 1398 },
+  { name: 'Wed', active: 2000, new: 9800 },
+  { name: 'Thu', active: 2780, new: 3908 },
+  { name: 'Fri', active: 1890, new: 4800 },
+  { name: 'Sat', active: 2390, new: 3800 },
+  { name: 'Sun', active: 3490, new: 4300 },
+];
+
+const pieData = [
+  { name: 'Desktop', value: 400 },
+  { name: 'Mobile', value: 300 },
+  { name: 'Tablet', value: 200 },
+  { name: 'Other', value: 100 },
+];
+
+const radialData = [
+  { name: 'Target', value: 75, fill: '#0088FE' },
+  { name: 'Current', value: 45, fill: '#00C49F' },
+];
+
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+
+// Custom tooltip component
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <Box 
+        sx={{
+          backgroundColor: 'background.paper',
+          border: '1px solid',
+          borderColor: 'divider',
+          borderRadius: 1,
+          p: 1.5,
+          boxShadow: 3,
+        }}
+      >
+        <Typography variant="body2" fontWeight={600} color="text.primary" gutterBottom>
+          {label}
+        </Typography>
+        {payload.map((entry, index) => (
+          <Box key={`tooltip-item-${index}`} sx={{ display: 'flex', alignItems: 'center', mb: 0.5 }}>
+            <Box 
+              sx={{ 
+                width: 10, 
+                height: 10, 
+                borderRadius: '50%', 
+                bgcolor: entry.color,
+                mr: 1,
+              }} 
+            />
+            <Typography variant="caption" color="text.secondary">
+              {entry.name}: 
+              <Box component="span" sx={{ ml: 0.5, color: 'text.primary', fontWeight: 500 }}>
+                {typeof entry.value === 'number' ? entry.value.toLocaleString() : entry.value}
+              </Box>
+            </Typography>
+          </Box>
+        ))}
+      </Box>
+    );
+  }
+  return null;
+};
+
+const DashboardHome = () => {
+  const theme = useTheme();
+  const [timeRange, setTimeRange] = useState('week');
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [loading, setLoading] = useState(false);
+  
+  // Mock data - in a real app, this would come from an API
+  const stats = [
+    { 
+      title: 'Total Revenue', 
+      value: '$48,569', 
+      icon: EqualizerIcon, 
+      color: theme.palette.primary.main,
+      trend: 'up',
+      trendValue: '12.5%',
+      trendLabel: 'vs last month',
+    },
+    { 
+      title: 'Active Users', 
+      value: '2,845', 
+      icon: PeopleIcon, 
+      color: theme.palette.success.main,
+      trend: 'up',
+      trendValue: '8.2%',
+      trendLabel: 'vs last month',
+    },
+    { 
+      title: 'New Orders', 
+      value: '1,245', 
+      icon: AssignmentIcon, 
+      color: theme.palette.warning.main,
+      trend: 'down',
+      trendValue: '3.1%',
+      trendLabel: 'vs last month',
+    },
+    { 
+      title: 'Avg. Session', 
+      value: '4m 32s', 
+      icon: BarChartIcon, 
+      color: theme.palette.info.main,
+      trend: 'up',
+      trendValue: '2.3%',
+      trendLabel: 'vs last month',
+    },
+  ];
+
+  const handleTimeRangeChange = (range) => {
+    setTimeRange(range);
+    setLoading(true);
+    // Simulate API call
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  };
+
+  const handleRefresh = () => {
+    setLoading(true);
+    // Simulate API call
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  };
+
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  const renderLineChart = (
+    <ResponsiveContainer width="100%" height={300}>
+      <LineChart data={salesData}>
+        <CartesianGrid strokeDasharray="3 3" vertical={false} />
+        <XAxis 
+          dataKey="name" 
+          axisLine={false} 
+          tickLine={false} 
+          tick={{ fill: theme.palette.text.secondary, fontSize: 12 }}
+        />
+        <YAxis 
+          axisLine={false} 
+          tickLine={false} 
+          tick={{ fill: theme.palette.text.secondary, fontSize: 12 }}
+        />
+        <Tooltip content={<CustomTooltip />} />
+        <Line 
+          type="monotone" 
+          dataKey="value" 
+          stroke={theme.palette.primary.main} 
+          strokeWidth={2}
+          dot={false}
+          activeDot={{ r: 6, strokeWidth: 0 }}
+        />
+      </LineChart>
+    </ResponsiveContainer>
+  );
+
+  const renderBarChart = (
+    <ResponsiveContainer width="100%" height={300}>
+      <BarChart data={userActivityData}>
+        <CartesianGrid strokeDasharray="3 3" vertical={false} />
+        <XAxis 
+          dataKey="name" 
+          axisLine={false} 
+          tickLine={false} 
+          tick={{ fill: theme.palette.text.secondary, fontSize: 12 }}
+        />
+        <YAxis 
+          axisLine={false} 
+          tickLine={false} 
+          tick={{ fill: theme.palette.text.secondary, fontSize: 12 }}
+        />
+        <Tooltip content={<CustomTooltip />} />
+        <Bar 
+          dataKey="active" 
+          fill={theme.palette.primary.main} 
+          radius={[4, 4, 0, 0]}
+        />
+        <Bar 
+          dataKey="new" 
+          fill={theme.palette.secondary.main} 
+          radius={[4, 4, 0, 0]}
+        />
+      </BarChart>
+    </ResponsiveContainer>
+  );
+
+  const renderPieChart = (
+    <ResponsiveContainer width="100%" height={300}>
+      <PieChart>
+        <Pie
+          data={pieData}
+          cx="50%"
+          cy="50%"
+          innerRadius={60}
+          outerRadius={80}
+          paddingAngle={5}
+          dataKey="value"
+        >
+          {pieData.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Tooltip content={<CustomTooltip />} />
+        <Legend 
+          layout="vertical" 
+          align="right" 
+          verticalAlign="middle"
+          formatter={(value, entry, index) => (
+            <Box component="span" sx={{ color: 'text.primary', fontSize: 12 }}>
+              {value}
+            </Box>
+          )}
+        />
+      </PieChart>
+    </ResponsiveContainer>
+  );
+
+  const renderRadialChart = (
+    <ResponsiveContainer width="100%" height={300}>
+      <RadialBarChart 
+        innerRadius="70%" 
+        outerRadius="100%" 
+        barSize={10} 
+        data={radialData}
+        startAngle={90}
+        endAngle={-270}
+      >
+        <RadialBar
+          label={{ 
+            position: 'center', 
+            fill: theme.palette.text.primary,
+            fontSize: 24,
+            fontWeight: 'bold',
+          }}
+          background
+          dataKey="value"
+        />
+        <Legend 
+          iconSize={10} 
+          layout="vertical" 
+          verticalAlign="middle"
+          formatter={(value, entry, index) => (
+            <Box component="span" sx={{ color: 'text.primary', fontSize: 12 }}>
+              {value}
+            </Box>
+          )}
+        />
+        <Tooltip content={<CustomTooltip />} />
+      </RadialBarChart>
+    </ResponsiveContainer>
+  );
+
+  return (
+    <Box sx={{ p: 3 }}>
+      {/* Header */}
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
+        <Typography variant="h5" fontWeight={600}>
+          Dashboard Overview
+        </Typography>
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <Button
+            variant="outlined"
+            size="small"
+            startIcon={<FilterListIcon />}
+            onClick={handleMenuOpen}
+            sx={{ mr: 1 }}
+          >
+            {timeRange === 'week' ? 'This Week' : 
+             timeRange === 'month' ? 'This Month' : 'This Year'}
+          </Button>
+          <IconButton 
+            size="small" 
+            onClick={handleRefresh}
+            disabled={loading}
+          >
+            <RefreshIcon />
+          </IconButton>
+          
+          <Menu
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleMenuClose}
+          >
+            <MenuItem 
+              onClick={() => {
+                handleTimeRangeChange('week');
+                handleMenuClose();
+              }}
+              selected={timeRange === 'week'}
+            >
+              This Week
+            </MenuItem>
+            <MenuItem 
+              onClick={() => {
+                handleTimeRangeChange('month');
+                handleMenuClose();
+              }}
+              selected={timeRange === 'month'}
+            >
+              This Month
+            </MenuItem>
+            <MenuItem 
+              onClick={() => {
+                handleTimeRangeChange('year');
+                handleMenuClose();
+              }}
+              selected={timeRange === 'year'}
+            >
+              This Year
+            </MenuItem>
+          </Menu>
+        </Box>
+      </Box>
+
+      {/* Stats Grid */}
+      <Grid container spacing={3} sx={{ mb: 3 }}>
+        {stats.map((stat, index) => (
+          <Grid item xs={12} sm={6} md={3} key={index}>
+            <StatCard
+              title={stat.title}
+              value={stat.value}
+              icon={stat.icon}
+              color={stat.color}
+              trend={stat.trend}
+              trendValue={stat.trendValue}
+              trendLabel={stat.trendLabel}
+              loading={loading}
+            />
+          </Grid>
+        ))}
+      </Grid>
+
+      {/* Charts Grid */}
+      <Grid container spacing={3}>
+        {/* Revenue Chart */}
+        <Grid item xs={12} md={8}>
+          <ChartCard 
+            title="Revenue Overview" 
+            action={
+              <IconButton size="small">
+                <MoreVertIcon fontSize="small" />
+              </IconButton>
+            }
+            loading={loading}
+          >
+            {renderLineChart}
+          </ChartCard>
+        </Grid>
+
+        {/* Traffic Sources */}
+        <Grid item xs={12} md={4}>
+          <ChartCard 
+            title="Traffic Sources"
+            loading={loading}
+          >
+            {renderPieChart}
+          </ChartCard>
+        </Grid>
+
+        {/* User Activity */}
+        <Grid item xs={12} md={8}>
+          <ChartCard 
+            title="User Activity"
+            loading={loading}
+          >
+            {renderBarChart}
+          </ChartCard>
+        </Grid>
+
+        {/* Performance */}
+        <Grid item xs={12} md={4}>
+          <ChartCard 
+            title="Performance"
+            loading={loading}
+          >
+            {renderRadialChart}
+          </ChartCard>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+};
+
+export default DashboardHome;
